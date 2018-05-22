@@ -1,0 +1,53 @@
+body,html {
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+header {
+    width: 100%;
+    background-color: greenyellow;
+}
+
+ul {
+    padding: 0;
+    width: 100%;
+}
+
+header li {
+    display: inline-block;
+    width: 33%;
+    /* margin-right: 0.625%; */
+}
+
+.login {
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 3;
+    color: black;
+    width: 100%;
+}
+
+
+li:last-child a {
+    margin-right: 0;
+}
+
+a:link, a:visited, a:focus {
+    background: yellow;
+}
+
+a:hover {     
+    background: orange;
+}
+
+a:active {
+    background: red;
+    color: white;
+}

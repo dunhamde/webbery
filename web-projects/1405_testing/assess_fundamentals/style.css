@@ -23,24 +23,23 @@ body {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
     border-radius: 1.5em 1.5em 0 0;
     height: 5em;
-    padding: 1em;
 }
 
 .card footer {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0.1));
     border-radius: 0 0 1.5em 1.5em;
     height: 5em;
-    margin-top: 2em;
 }
-
+/* Should use just normal four corner padding instead of using padding-left, padding-top etc */
 .card h2, p {
     margin: 0;
+    padding-left: 1em;
+    padding-top: 0.5em
 }
 
 .card header h2 {
     font-size: 2em;
     height: 2em;
-    padding: 0.5em 0 0 0;
 }
 .card footer p {
     font-size: 1.5em;
@@ -54,4 +53,6 @@ body {
 .card article {
     height: 12em;
     background-color: rgba(1,1,1,0.2);
+    color: white;
+    padding-left: 1em;
 }
