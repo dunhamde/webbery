@@ -1,20 +1,32 @@
 def oneaway(a, b):
     lena = len(a)
     lenb = len(b)
-    if abs(lena - lenb) > 1
+    if a == b:
         return False
-    if lena < lenb:
-        for i in enumerate(a):
-            if a[i] != b[i]:
-                if a[i+1:] == b[i+1:]:
-                    return True
-                else if a[i:] == b[i+1:]:
-                    return True
-                else if a[i+1:] == b[i:]
-                    return True
-                break
-            
+    if abs(lena - lenb) > 1:
+        return False
+    if lenb < lena:
+        temp = a
+        a = b
+        b = temp
 
+    for i,c in enumerate(a):
+        if a[i] != b[i]:
+            if a[i+1:] == b[i+1:]:
+                return True
+            elif a[i:] == b[i+1:]:
+                return True
+            elif a[i+1:] == b[i:]:
+                return True
+            else:
+                return False
+    return True
+
+def test_oneaway():
+    if oneaway('bake','pale'):
+        print('true') 
+    else:
+        print('false')
 
 def check_palindrome(string):
     strmap = dict()
@@ -41,6 +53,12 @@ def check_palindrome(string):
                         return False
                     oneoff = True
         return True
+
+def test_palindrome():
+    if not check_palindrome('derekrk'):
+        print('not pal')
+    else:
+        print('palindrome')
 
 def urlify(strarr, len):
     print("array len: " + str(len))
@@ -101,7 +119,6 @@ def test_isperm():
     else:
         print("not a perm!")
 
-if not check_palindrome('derekrk'):
-    print('not pal')
-else:
-    print('palindrome')
+test_oneaway()
+
+
