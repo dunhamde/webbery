@@ -1,0 +1,26 @@
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+/* Your CSS below here */
+/* Need to verify how to set the text location using margin, padding ,etc */
+/* Need to remember to use line height to align text vertically */
+p {
+  width: 200px;
+  margin: auto;
+  line-height: 3;
+  background-color: rgb(221, 39, 39);
+  color: rgb(221, 39, 39);
+  text-shadow: 1px 1px 2px black;
+  border-color: 1px solid black;
+  border: 1px solid #990000;
+  background-image: linear-gradient(to top left, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
+  box-shadow: inset 2px 2px 3px rgba(255,255,255,0.6), 
+              inset -2px -2px 3px rgba(0,0,0,0.6), 2px 2px 5px black;
+  font-size: 1.7rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 10px;
+}
