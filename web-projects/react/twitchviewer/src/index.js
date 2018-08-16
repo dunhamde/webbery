@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import NavHeader from './components/nav_header';
+import MainStream from './components/main_stream';
+
+// import reducers from './reducers';
+
+ReactDOM.render(
+    <div>
+        <NavHeader />
+        <MainStream />
+    </div>
+, document.querySelector('.container'));
