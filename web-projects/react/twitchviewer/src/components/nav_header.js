@@ -1,21 +1,35 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
+import { LinkContainer } from 'react-router-bootstrap';
+import { Nav, Navbar, NavItem } from 'react-bootstrap';
+import './style/nav_header.css';
 
 class NavHeader extends Component {
     render() {
         return (
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <span class="navbar-brand mb-0 h1">TwitchViewer</span>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="/">Popular</a>
-                        <a class="nav-item nav-link" href="/">Games</a>
-                        <a class="nav-item nav-link" href="/">Settings</a>
-                    </div>
-                </div>
-            </nav>
+            <div>
+            <Navbar inverse defaultNavExpanded>
+              <Navbar.Header>
+                <Navbar.Brand>
+                  <Link to="/">TwitchViewer</Link>
+                </Navbar.Brand>
+                <Navbar.Toggle />
+            </Navbar.Header>
+            <Navbar.Collapse>
+                <Nav>
+                    <LinkContainer to="/popular">
+                        <NavItem>Popular</NavItem>
+                    </LinkContainer>
+                    <LinkContainer to="/popular">
+                        <NavItem>Games</NavItem>
+                    </LinkContainer>
+                    <LinkContainer to="/popular">
+                        <NavItem>Settings</NavItem>
+                    </LinkContainer>
+                </Nav>
+            </Navbar.Collapse>
+            </Navbar>
+          </div>
             
 
         );
