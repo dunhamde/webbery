@@ -20,16 +20,16 @@ class NavHeader extends Component {
                     <LinkContainer to="/popular">
                         <NavItem>Popular</NavItem>
                     </LinkContainer>
-                    <LinkContainer to="/popular">
+                    <LinkContainer to="/games">
                         <NavItem>Games</NavItem>
                     </LinkContainer>
-                    <LinkContainer to="/popular">
+                    <LinkContainer to="/settings">
                         <NavItem>Settings</NavItem>
                     </LinkContainer>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
-          </div>
+            </div>
             
 
         );

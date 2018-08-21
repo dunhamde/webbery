@@ -9,6 +9,8 @@ h1 {
 .navbar,
 .navbar-default {
     background-color: #a442f4 !important;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .navbar-brand,
